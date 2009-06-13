@@ -1,0 +1,58 @@
+!!!
+%html
+  %head
+    %title Zaqpki
+    %meta{ :"http-equiv" => 'Content-Type', :content => 'text/html; charset=utf-8'}
+    %link{:href=>"/stylesheets/dashboard.css", :media=>"screen", :rel=>"stylesheet", :type=>"text/css"}
+    %script{ :type => "text/javascript", :src => '/js/mootools/core.js'}
+    %script{ :type => "text/javascript", :src => '/js/znajomi.js'}
+  %body#container
+    #main
+      .zawartosc
+        #dodaj_zaqpek
+          Dodaj zaqpek
+        #dodawarka_zaqpka{:style => 'display: none'}
+          %form{:action => '/dodaj_zaqpek', :method => 'POST'}
+            .koszt_moj
+              %input{:type => 'text', :name => 'koszt', :id => 'koszt', :size => 5, :value => 'za'}
+              zł
+            .nazwa
+              %input{:type => 'text', :name => 'nazwa', :id => 'nazwa', :size => 18, :value => 'nazwa'}
+            .dla
+              %input{:type => 'text', :name => 'dla', :id => 'dla', :size => 25}
+            %input{:type => 'submit', :value => ''}
+            %a{:href=>'javascript:anuluj_zaqpek()'}
+              #delete_icon
+        .zaqpek
+          .koszt_moj 5 zł
+          .nazwa Czekoladka
+          .dla Kraxi, Poskart
+        .zaqpek
+          .koszt_cudzy="-2,50 zł"
+          .nazwa Obiadek
+          .od Kraxi
+      .sidebar
+        #dodaj_znajomego
+          Dodaj znajomego
+        #dodawarka_znajomego{:style => 'display: none'}
+          %form{:method => 'POST', :action => '/dodaj_znajomego'}
+            %input{:size => 23, :type => 'text', :name => 'nick', :id => 'nick'}
+            %input{:type => 'submit', :value => ''}
+            %a{:href=>'javascript:anuluj_znajomego()'}
+              #delete_icon
+        #znajomi
+          .znajomy
+            .imie
+              Kraxi
+            .saldo
+              5
+          .znajomy
+            .imie
+              Poskart
+            .saldo
+              5
+          .znajomy
+            .imie
+              Jercik
+            .saldo
+              5

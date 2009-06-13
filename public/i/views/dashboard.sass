@@ -1,0 +1,147 @@
+@import base.sass
++blueprint-typography
++blueprint
+body
+  :background url('/img/background_stripe.png')
+
+a
+  :text-decoration none
+
+#container
+  +container
+  :margin-top 50px
+
+
+
+input[type=submit]
+  :margin-left 10px
+  :background-color transparent
+  :border 0
+  :display inline-block
+  :background transparent url('/img/24/accept.png') center center no-repeat
+  :height 24px
+  :width 40px
+  :cursor pointer
+
+=icon
+  :display inline-block
+  :width 24px
+  :height 24px
+  :margin-bottom -8px
+
+#pie_chart_icon
+  +icon
+  :background url('/img/24/chart_pie.png')
+
+#delete_icon
+  +icon
+  :background url('/img/24/delete.png')
+
+#user_icon
+  +icon
+  :background url('/img/24/user.png')
+
+#users_icon
+  +icon
+  :background url('/img/24/users.png')
+
+#cart_icon
+  +icon
+  :background url('/img/24/shopping_cart.png')
+  
+=feed
+  :background-color #fff
+  :padding-left 10px
+  :margin-bottom 1px
+  :line-height 40px
+
+.koszt
+  :min-width 100px
+  :display inline-block
+
+.koszt_moj
+  :min-width 100px
+  :padding-left 30px
+  :display inline-block
+  :background url('/img/24/chart_up.png') left center no-repeat
+  
+.koszt_cudzy
+  :min-width 100px
+  :padding-left 30px
+  :display inline-block
+  :background url('/img/24/chart_down.png') left center no-repeat
+  
+.nazwa
+  :min-width 150px
+  :padding-left 30px
+  :display inline-block
+  :background url('/img/24/shopping_cart.png') left center no-repeat
+  
+.dla
+  :padding-left 30px
+  :display inline-block
+  :background url('/img/24/users.png') left center no-repeat
+
+.od
+  :padding-left 30px
+  :display inline-block
+  :background url('/img/24/user.png') left center no-repeat
+
+.zawartosc
+  +column(16)
+  #dodaj_zaqpek
+    +feed
+    :cursor pointer
+    :padding-left 40px
+    :background #000 url('/img/24/add.png') 10px center no-repeat
+    :color #fff
+  #dodawarka_zaqpka
+    +feed
+    :background-color #000
+    :color #fff
+    
+  .zaqpek
+    +feed
+    :display block
+    :text-align left
+    :background-color #fff
+  
+=friend_field
+  :margin-bottom 1px
+  :float left
+  :display block
+  :position relative
+  :padding 0
+  :background-color #fff
+
+.sidebar
+  +column(8, true)
+  #dodaj_znajomego
+    +feed
+    :cursor pointer
+    :padding-left 40px
+    :background #000 url('/img/24/add.png') 10px center no-repeat
+    :color #fff
+  #dodawarka_znajomego
+    :background #000 url('/img/24/user.png') 10px center no-repeat
+    :padding-left 40px
+    :line-height 40px
+    :height 40px
+    :color #fff
+    :height 40px
+    :margin-bottom 1px
+  #znajomi
+    :display inline-block
+    .znajomy
+      :line-height 40px
+      :cursor pointer
+      .imie
+        +friend_field
+        :line-height 40px
+        :background #fff url('/img/24/user.png') 10px center no-repeat
+        :padding-left 40px
+        :width= !blueprint_grid_width * 5 + 5 * !blueprint_grid_margin
+      .saldo
+        +friend_field
+        :line-height 40px
+        :width= !blueprint_grid_width * 2 + !blueprint_grid_margin
