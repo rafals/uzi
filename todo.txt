@@ -1,0 +1,62 @@
+Znajomi
+  Dodaj znajomego
+  Statsy
+Zaqpki
+  Dodaj zaqpek
+  Blog
+Profil
+  Edytuj
+  Usuń
+Forum
+
+
+
+
+Znajomi -> Statsy
+  Statsy
+  Dodaj
+  Edytuj
+Zaqpki -> Dodaj
+  Dodaj
+  Nowe
+  Archiwum
+Ustawienia -> Edytuj profil
+  Edytuj profil
+  Usuń konto
+Dodatki -> Dodaj
+Forum -> redir
+Wyloguj -> redir
+
+Znajomi
+  Saldo
+  Dodaj
+  Edytuj
+Zaqpki
+  Dodaj
+  Nowe
+  Archiwum
+Profil
+  Edytuj
+  Wyloguj
+
+Statsy
+Dodaj zaqpek
+--
+Zaqpki -> nowe, lub archiwum
+  Dodaj
+  Nowe
+  Archiwum
+Znajomi
+  Saldo
+  Dodaj
+  Edytuj
+Profil
+  Zobacz
+  Edytuj
+  Wyloguj
+
+
+Nowe, lub dodawarka z listą (saldem)
+
+
+

@@ -1,0 +1,37 @@
+body {
+	font-family:Verdana, Geneva, sans-serif;
+	color: #006;
+}
+
+.center {
+  width: 300px;
+  margin: 100px auto;
+}
+
+.right {
+  text-align: right;
+}
+input {
+  border: 1px solid;
+  background:transparent;
+  border-bottom-color:#aaa;
+	border-right-color:#aaa;
+	border-top-color:#ddd;
+	border-left-color:#ddd;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+input[type="submit"] {
+	background-color:#fff;
+	border-width:1px;
+	border-style:solid;
+	border-bottom-color:#aaa;
+	border-right-color:#aaa;
+	border-top-color:#ddd;
+	border-left-color:#ddd;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}

@@ -1,0 +1,65 @@
+%script{ :src => "js/view.js", :type => "text/javascript" }
+%script{ :src => "js/dashboard.js", :type => "text/javascript" }
+%link{ :href => "css/accordion.css", :rel => "stylesheet", :media => "screen", :type => "text/css" }
+#container
+  #menu
+    #menu_top.top_dark
+    #menu_content
+      #Znajomi.title Znajomi
+      .section
+        %ul
+          = menu_li('Statsy', 'ShowStats', 'chart')
+          = menu_li('Dodaj znajomego', 'ShowFriendsAdd', 'user--plus')
+      #Zaqpki.title Zaqpki
+      .section
+        %ul
+          = menu_li('Dodaj zaqpek', 'ShowZaqpkiAdd', 'box--plus')
+          = menu_li('Nowe zaqpki', 'ShowZaqpkiNew', 'bookmark-book-open')
+          = menu_li('Archiwum', 'ShowZaqpkiArchive', 'book-open-previous')
+      .title Profil
+      .section
+        %ul
+          = menu_li 'Wiadomości', 'ShowProfileMessages', 'mails'
+          = menu_li 'Edytuj profil', 'ShowProfileEdit', 'card-address'
+          = menu_li 'Wyloguj', 'ShowProfileLogout', 'control-power'
+      .title Forum
+      .section
+        / no content hack
+    #menu_bottom.bottom_dark
+  #content
+    #Stats
+      .panel
+        .panel_top.top_light
+        .panel_content
+          .title.active
+            Statsy
+          .section
+            .friends
+              .friend
+                .name
+                  %img.icon{:src => '/i/icons/user.png'}
+                  Poskart
+                .saldo 20
+              .friend
+                .name
+                  %img.icon{:src => '/i/icons/user.png'}
+                  Krax
+                .saldo -5
+              .friend
+                .name
+                  %img.icon{:src => '/i/icons/user.png'}
+                  Jer
+                .saldo -15
+        .panel_bottom.bottom_light
+    #FriendsAdd{:style => 'display: none'}
+      Add Friend
+    #ZaqpkiAdd{:style => 'display: none'}
+      Dodaj Zaqpek
+    #ZaqpkiNew{:style => 'display: none'}
+      Nowe Zaqpki
+    #ZaqpkiArchive{:style => 'display: none'}
+      Archiwum
+    #ProfileMessages{:style => 'display: none'}
+      Wiadomości
+    #ProfileEdit{:style => 'display: none'}
+      Edycja Profilu

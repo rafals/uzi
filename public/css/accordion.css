@@ -1,0 +1,179 @@
+html, body {
+	
+}
+
+body {
+	font: 12px Arial, sans-serif;
+	background: #fff;
+	color: #444;
+	overflow: -moz-scrollbars-vertical;
+}
+
+p {
+	padding: 5px 10px;
+	color: #666;
+}
+
+#container {
+  width: 470px;
+	margin: 20px auto;
+	min-height: 100%; /*ie hack*/
+}
+
+#menu_content, .panel_content {
+	width: 220px;
+	margin: 0 auto;
+}
+
+#menu, .panel {
+	width: 232px;
+	overflow: hidden;
+	background: #fff url("/i/wrapbg.gif") repeat-y top left;
+	float: left;
+}
+
+#content {
+  width: 232px;
+  float: left;
+  background-color: red;
+}
+
+div.title {
+  padding: 10px 0 11px 15px;
+	margin: 0;
+	font-size: 12px;
+	font-weight: normal;
+	color: #222;
+	cursor: pointer;
+  border-top: 1px solid #fff;
+	color: #666;
+	text-decoration: none;
+	background-color: #efefef;
+}
+
+.title:hover {
+	color: black;
+}
+
+.title:first-child {
+  margin-top: 4px;
+  border-top: 0px;
+}
+
+.title.active {
+  background-color: #f4f4f4;
+  color: #000;
+  text-decoration: none;
+}
+
+
+.top_dark {
+	background: url("/i/top_dark.gif") no-repeat top left;
+}
+
+.top_light {
+	background: url("/i/top_light.gif") no-repeat top left;
+}
+
+.section {
+	background: #fff url("/i/accordionbg.gif") repeat-x top left;
+}
+
+div.section ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 5px 0;
+}
+
+div.section ul li {
+  border-top: 1px dotted #ddd;
+	padding: 6px 0;
+	width: 100%;
+}
+
+div.section ul li a {
+	color: #666;
+	text-decoration: none;
+	display: block;
+	padding: 4px 0px 4px 20px;
+	font-size: 90%;
+}
+
+div.section ul li a span {
+	padding-bottom: 10px;
+}
+
+img.icon {
+	border: 0;
+	width: 16px;
+	height: 16px;
+	vertical-align: bottom;
+	margin-right: 15px;
+}
+
+img.title_icon {
+  border: 0;
+	width: 16px;
+	height: 16px;
+	vertical-align: bottom;
+	margin-right: 15px;
+  margin-left: 5px;
+}
+
+.friend {
+  border-top: 1px dotted #ddd;
+  display: block;
+  font-size: 90%;
+  color: #666;
+  width: 220px;
+  height: 35px;
+}
+
+.name {
+  padding-left: 20px;
+  padding-top: 10px;
+  float: left;
+}
+
+.saldo {
+  padding-right: 10px;
+  padding-top: 10px;
+  float: right;
+}
+
+div.section ul li a:hover span {
+	text-decoration: underline;
+}
+
+.panel_content div.section {
+  background: #f4f4f4;
+}
+
+#menu_top, .panel_top {
+	height: 10px;
+	font-size: 1px; /* ie whitespace */
+	margin-bottom: -5px;
+}
+
+#menu_bottom, .panel_bottom {
+	height: 10px;
+	font-size: 1px; /* ie whitespace */
+	margin-top: -5px;
+}
+	
+.top_dark {
+	background: url("/i/top_dark.gif") no-repeat top left;
+}
+
+.top_light {
+	background: url("/i/top_light.gif") no-repeat top left;
+}
+
+.bottom_dark {
+	background: url("/i/bottom_dark.gif") no-repeat top left;
+}
+
+.bottom_light {
+	background: url("/i/bottom_light.gif") no-repeat top left;
+}
+
