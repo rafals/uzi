@@ -1,0 +1,27 @@
+!!!
+%html
+  %head
+    %title= 'Zaqpki'
+    %meta{ :"http-equiv" => 'Content-Type', :content => 'text/html; charset=utf-8'}
+    %link{:rel => 'shortcut icon', :href => '/img/fav.gif'}
+    %script{ :type => "text/javascript" }
+      = inject_js '/js/mootools/core-c.js', '/js/mootools/more-c.js', '/js/view.js', '/js/dashboard/env.js'
+      = "window.addEvent('domready', function(){"
+      = 'Models.user = ' + @user.to_json
+      - @plugins.each do |plugin|
+        = inject_js plugin.js
+      = inject_js '/js/dashboard/domready.js'
+      = 'Views.' + @open.name + '.open()'
+      = 'Zaqpki.menu.display(' + dashboard_menu_open_section(@plugins, @open).to_s + ')'
+      = "})"
+    %style
+      = inject_css '/css/dashboard.css'
+      - @plugins.each do |plugin|
+        = inject_css plugin.css
+  %body
+    #container
+      = dashboard_menu @plugins
+      #content
+        - @plugins.each do |plugin|
+          %div{:id => plugin.name}
+            = partial plugin.view

@@ -1,0 +1,17 @@
+#menu
+  #menu_top.top_dark
+  #menu_content
+    - schema.each do |element|
+      - if element.length == 1
+        %div.title{:show => element[0].name}= element[0].title
+        .section
+      - else
+        %div.title{:show => element[0].name}= element[0].section
+        .section
+          %ul
+            - element[1].each do |link|
+              %li
+                %a{:show => link.name, :href => '#'}
+                  %img.icon{:src => link.icon, :alt => link.title}
+                  %span= link.title
+  #menu_bottom.bottom_dark

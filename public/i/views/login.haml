@@ -1,0 +1,45 @@
+!!!
+%html
+  %head
+    %title= 'Zaqpki'
+    %meta{ :"http-equiv" => 'Content-Type', :content => 'text/html; charset=utf-8'}
+    %link{:rel => 'shortcut icon', :href => '/img/fav.gif'}
+    = include_js('/js/mootools/core.js')
+    = include_js('/js/mootools/more.js')
+    = include_js('/js/formcheck.js')
+    = include_js('/js/login/login.js')
+    = include_css('/css/reset.css')
+    = include_css('/css/login.css')
+  %body
+    %form#loginForm{:action => '/login', :method => 'POST'}
+      %ul.menu
+        %li.active
+          Logowanie
+        %li#showSignup
+          Rejestracja
+      %label{:for => 'loginLogin'} Login lub Email
+      %input#loginLogin.required{:type => 'text', :name => 'login', :size => 40, :class => "validate['%loginCheck','required']"}
+      %label{:for => 'loginPassword'} Hasło
+      %input#loginPassword.required{:type => 'password', :name => 'password', :size => 40, :class => "validate['required']"}
+      %input#loginSubmit.button{:type => 'submit', :value => 'Zaloguj'}
+      .required-info
+        Pola wymagane
+    %form#signupForm{:action => '/signup', :method => 'POST', :style => 'display: none'}
+      %ul.menu
+        %li#showLogin
+          Logowanie
+        %li.active
+          Rejestracja
+      %label{:for => 'signupLogin'} Login
+      %input#signupLogin.required{:type => 'text', :name => 'login', :size => 40, :class => "validate['required','alphanum']"}
+      %label{:for => 'signupEmail'} Email
+      %input#signupEmail.required{:type => 'text', :name => 'email', :size => 40, :class => "validate['required','email']"}
+      %label{:for => 'signupFullname'} Imię i nazwisko
+      %input#signupFullname{:type => 'text', :name => 'fullname', :size => 40, :class => "validate['nodigit']"}
+      %label{:for => 'signupPassword'} Hasło
+      %input#signupPassword.required{:type => 'password', :name => 'password', :size => 40, :class => "validate['required']"}
+      %label{:for => 'signupPasswordConfirmation'} Powtórz hasło
+      %input#signupPasswordConfirmation.required{:type => 'password', :size => 40, :name => 'password_confirmation', :class => "validate['confirm[password]']"}
+      %input#signupSubmit{:type => 'submit', :value => 'Zarejestruj'}
+      .required-info
+        Pola wymagane

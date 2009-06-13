@@ -1,0 +1,13 @@
+zamiana pluginów na modele
+dodawanie domyślnych pluginów przy rejestracji
+pluginy usuwalne i nie.
+grupy userów
+pierwszy user może dostawać admina
+dostaje wówczas dostęp do sekcji admina
+
+plugins = []
+plugins.
+
+
+- Admin
+  - 
