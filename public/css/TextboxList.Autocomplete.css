@@ -1,0 +1,19 @@
+/* 
+		This stylesheet belongs to TextboxList - Copyright Guillermo Rauch <http://devthought.com> 2009 
+		TextboxList is not priceless for commercial use. See <http://devthought.com/projects/mootools/textboxlist/> 
+		Purchase to remove copyright
+*/
+
+.textboxlist-autocomplete {  }
+.textboxlist-autocomplete-placeholder, .textboxlist-autocomplete-results { -webkit-box-shadow: 0 3px 3px #ccc; -moz-box-shadow: 0 3px 3px #ccc; box-shadow: 0 3px 3px #ccc; display: none; }
+.textboxlist-autocomplete-placeholder {}
+.textboxlist-autocomplete-results { margin: 0; padding: 0; background: url('/i/dashboard-bg.gif') bottom; border-bottom: 1px solid #ccc;}
+.textboxlist-autocomplete-result { margin: 0; line-height: 30px; width: 300px; list-style-type: none; }
+.textboxlist-autocomplete-result-focus { background: #ccc; }
+.textboxlist-autocomplete-highlight { background: #ccc; font-weight: bold; }
+
+/*  TextboxList.Autocomplete Style guidelines 
+			Try to keep .textboxlist-autocomplete {} as it is now
+			If you apply custom styles to placeholder, also apply them to results, like it is now.
+			.textboxlist-autocomplete-result {} needs a background for IE.
+*/
