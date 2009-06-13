@@ -1,0 +1,133 @@
+html, body {
+	
+}
+
+body {
+	font: 12px Arial, sans-serif;
+	background: #fff;
+	color: #444;
+	overflow: -moz-scrollbars-vertical;
+}
+
+p {
+	padding: 5px 10px;
+	color: #666;
+}
+
+#container {
+	width: 400px;
+	margin: 20px auto;
+	min-height: 100%; /*ie hack*/
+}
+
+#content {
+	width: 220px;
+	margin: 0 auto;
+}
+
+#wrap {
+	width: 232px;
+	overflow: hidden;
+	background: #fff url("/i/wrapbg.gif") repeat-y top left;
+}
+
+.title {
+  padding: 10px 0 11px 15px;
+	margin: 0;
+	font-size: 12px;
+	font-weight: normal;
+	color: #222;
+	cursor: pointer;
+  border-top: 1px solid #fff;
+	color: #666;
+	text-decoration: none;
+	background-color: #efefef;
+}
+
+.title:hover {
+	color: black;
+}
+
+.title:first-child {
+  border-top: 0px;
+}
+
+.title.active {
+  background-color: #f4f4f4;
+  color: #000;
+  text-decoration: none;
+}
+
+
+.top_dark {
+	background: url("/i/top_dark.gif") no-repeat top left;
+}
+
+.top_light {
+	background: url("/i/top_light.gif") no-repeat top left;
+}
+
+.section {
+	background: #fff url("/i/accordionbg.gif") repeat-x top left;
+}
+
+.section ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 5px 0;
+}
+
+div.section ul li {
+	padding: 6px 0;
+}
+
+div.section ul li a {
+	color: #666;
+	text-decoration: none;
+	display: block;
+	padding: 4px 0px 4px 20px;
+	font-size: 90%;
+}
+
+div.section ul li a span {
+	padding-bottom: 10px;
+}
+
+div.section ul li a img {
+	border: 0;
+	vertical-align: bottom;
+	margin-right: 15px;
+}
+
+div.section ul li a:hover span {
+	text-decoration: underline;	
+}
+
+#top_round {
+	height: 10px;
+	font-size: 1px; /* ie whitespace */
+	margin-bottom: -5px;
+}
+
+#bottom_round {
+	height: 10px;
+	font-size: 1px; /* ie whitespace */
+	margin-top: -5px;
+}
+	
+.top_dark {
+	background: url("/i/top_dark.gif") no-repeat top left;
+}
+
+.top_light {
+	background: url("/i/top_light.gif") no-repeat top left;
+}
+
+.bottom_dark {
+	background: url("/i/bottom_dark.gif") no-repeat top left;
+}
+
+.bottom_light {
+	background: url("/i/bottom_light.gif") no-repeat top left;
+}
+

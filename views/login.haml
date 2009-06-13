@@ -1,0 +1,5 @@
+%script{:src => "js/login.js", :type => "text/javascript"}
+%link{:href => "css/login.css", :rel => "stylesheet", :media => "screen", :type => "text/css"}
+%form.center{:method => 'POST', :action => '/login.json'}
+  %input{:type => 'text', :rel => 'Login lub Email', :name => 'login', :class => "validate['required','%loginCheck']"}
+  %input{:type => 'password', :rel => 'Hasło', :name => 'password', :class => "validate['required']"}
