@@ -1,0 +1,68 @@
+!!!
+%html{ :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
+    %title
+      Zaqpki
+    %link{ :href => "css/reset.css", :rel => "stylesheet", :media => "screen", :type => "text/css" }
+    %link{ :href => "css/main.css", :rel => "stylesheet", :media => "screen", :type => "text/css" }
+    %script{ :src => "js/jquery.js", :type => "text/javascript" }
+    %script{ :src => "js/jquery-ui.js", :type => "text/javascript" }
+    %script{ :src => "js/jquery.validate.js", :type => "text/javascript" }
+    %script{ :src => "js/jquery.form.js", :type => "text/javascript" }
+    %script{ :src => "js/jquery.absolutize.js", :type => "text/javascript" }
+    %script{ :src => "js/main.js", :type => "text/javascript" }
+  %body
+    %form#loginForm{ :action => "", :method => "post" }
+      .field
+        %label{ :for => "lemail" }
+          E-mail
+        %input#lemail.text{ :name => "email" }
+      .field
+        %label{ :for => "lpassword" }
+          Hasło
+        %input#lpassword.text{ :name => "password", :type => "password" }
+      .field
+        %a#showSignupForm.minor{ :href => "#" }
+          Rejestracja
+        %input.submit{ :type => "submit", :value => "Zaloguj" }
+      .field
+        %img.loader{ :src => "i/loading.gif", :alt => "loading..." }
+    %form#signupForm{ :action => "", :method => "post" }
+      .field
+        %label{ :for => "semail" }
+          E-mail
+        %input#semail.text{ :name => "email" }
+      .field
+        %label{ :for => "spassword" }
+          Hasło
+        %input#spassword.text{ :name => "password", :type => "password" }
+      .field
+        %label{ :for => "spasswordc" }
+          Powtórz hasło
+        %input#spasswordc.text{ :name => "confirm_password", :type => "password" }
+      .field
+        %a#showLoginForm.minor{ :href => "#" }
+          Logowanie
+        %input.submit{ :type => "submit", :value => "Zarejestruj" }
+      .field
+        %img.loader{ :src => "i/loading.gif", :alt => "loading..." }
+    #profile{:style => 'display: none;'}
+    #dashboard{:style => 'display: none;'}
+      #add
+        Nowy zaqpek
+      #addForm{:style => 'display: none;'}
+        #costLabel.label.active
+          Koszt
+        #costForm.form
+          %input#cost{:type => 'text', :size => 55}
+        #forLabel.label
+          Dla
+        #forForm.form{:style => 'display: none'}
+          ihahah
+        #detailsLabel.label
+          Szczegóły
+        #detailsForm.form{:style => 'display: none'}
+          ihahahahahahha
+      #friends
+      

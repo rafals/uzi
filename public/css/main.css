@@ -1,0 +1,102 @@
+html, body {font-size:12px; color:#5F6B75;font-family:sans-serif, verdana, tahoma; margin:0px; padding:0px}
+
+.minor {color: #cccccc;}
+a.minor {text-decoration: none;}
+a:hover.minor {color: red;}
+
+form {
+  width: 320px;
+  font-weight: bold;
+  position: absolute;
+  text-align: right;
+  padding: 0;
+  margin: 0 auto;
+  top: 100px;
+  right: 100px;
+}
+.error {color: red;}
+form label.error, .fieldError {color: red; display: block; text-align: left; margin-left: 155px;}
+
+input.text {border:0px; margin:0px; padding:4px 4px 0; background:url(/i/input.gif) right 0 no-repeat; width:158px; height:23px;}
+
+#dashboard {
+  font-weight: bold;
+  text-align: center;
+  margin: 50px auto;
+  width: 400px;
+}
+
+#friends {
+  background:url(/i/dashboard-bg.gif);
+}
+
+.friendName {
+  text-align: left;
+  padding-left: 10px;
+  color: #000;
+  font-weight: normal;
+  float: left;
+  width: 290px;
+}
+
+.friendSaldo {
+  float: right;
+  width: 90px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.friend {
+  line-height: 30px;
+  height: 30px;
+  cursor:pointer;
+}
+
+.friend:hover {
+  background-color: #ccc;
+}
+
+.form {
+  background-color: #eee;
+}
+
+#costForm {
+  padding: 4px;
+}
+
+.label {
+  font-weight: normal;
+  text-align: left;
+  padding-left: 10px;
+  line-height: 15px;
+  height: 15px;
+  background:url(/i/15-bg.gif);
+  color: #fff;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.label:hover {
+  background:url(/i/15-bg-dark.gif);
+}
+
+#add {
+  background:url(/i/30-bg.gif);
+  color: #fff;
+  line-height: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+#add:hover {
+  background:url(/i/30-bg-dark.gif);
+  color:white;
+}
+
+#profile {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

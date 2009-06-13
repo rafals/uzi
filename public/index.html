@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content='text/html; charset=utf-8' />
+<title>Zaqpki</title>
+
+<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery-ui.js" type="text/javascript"></script>
+<script src="js/jquery.validate.js" type="text/javascript"></script>
+<script src="js/jquery.form.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div id="loader"><img src="img/loading.gif" alt="loading..." /></div>
+<form id="loginForm" method="post" action="">
+	<fieldset>
+
+		<p>
+			<label for="lemail">E-mail</label>
+			<input id="lemail" name="email" class="text"/>
+		<p>
+			<label for="lpassword">Hasło</label>
+			<input id="lpassword" name="password" type="password" class="text"/>
+		</p>
+		<p>
+		  <a href="#" id="showSignupForm" class="minor">Rejestracja</a>
+			<input class="submit" type="submit" value="Zaloguj"/>
+		</p>
+	</fieldset>
+</form>
+
+<form id="signupForm" method="post" action="">
+	<fieldset>
+		<p>
+			<label for="semail">E-mail</label>
+			<input id="semail" name="email" class="text"/>
+		<p>
+			<label for="spassword">Hasło</label>
+			<input id="spassword" name="password" type="password" class="text"/>
+		</p>
+		<p>
+			<label for="spasswordc">Znowu Hasło</label>
+			<input id="spasswordc" name="confirm_password" type="password" class="text"/>
+		</p>
+		<p>
+		  <a href="#" id="showLoginForm" class="minor">Logowanie</a>
+			<input class="submit" type="submit" value="Zarejestruj"/>
+		</p>
+		<p>
+		  
+		</p>
+	</fieldset>
+</form>
+</body>
+</html>
